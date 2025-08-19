@@ -1,0 +1,1486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+/*Utility Classes*/
+.text-primary{
+    color: #08d665;
+}
+.btn-primary{
+    background-color: #08d665;
+    color: #f1f1f1;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+/*Utility Classes*/
+/*Header Start*/
+header{
+    background: url(../img/Portofollio/Background.jpg);
+    height: 100vh;
+}
+header .navbar{
+    background-color: #0a0a0a25;
+    border-bottom: 1px solid #afafaf27;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 999;
+}
+header .navbar nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1.2rem 2rem;
+}
+header .navbar nav .logo{
+   font-size: 32px;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+header .navbar nav ul{
+    display: flex;
+}
+header .navbar nav ul li a{
+    color: #f1f1f1;
+    margin: 0 15px;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    transition: all 0.4s ease;
+}
+header .navbar nav ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #08d665;
+    height: 2px;
+    width: 0%;
+    transition: all 0.4s ease;
+}
+header .navbar nav ul li a:hover::after{
+    width: 100%;
+}
+header .navbar nav ul li a:hover{
+    color: #08d665;
+}
+header .social-icons a{
+    color: #f1f1f1;
+    margin: 0 5px;
+    font-size: 24px;
+    transition: all 0.4s ease;
+}
+header .social-icons a:hover{
+   color: #08d665;
+}
+header .header-content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    max-width: 1100px;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+    padding: 12rem 2rem ;
+}
+header .header-content img{
+    width: 430px;
+}
+header .header-content .content-text{
+    color: #f1f1f1;
+}
+header .header-content .content-text span{
+    font-size: 20px;
+    font-weight: 600;
+}
+header .header-content .content-text p{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 15px;
+}
+header .header-content .content-text h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+header .header-content .content-text .btn-primary{
+    font-size: 13px;
+    transition: all 0.4s ease;
+    margin-top: 15px;
+    display: inline-block;
+}
+header .header-content .content-text .btn-primary:hover{
+    background-color: #079b49;
+}
+/*Header End*/
+/*About Start*/
+#about , 
+#skills ,
+#services ,
+#projects ,
+#contacts{
+    padding: 6rem 0;
+}
+#about h2 ,
+#skills h2 ,
+#services h2 ,
+#projects h2 ,
+#contacts h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#about hr {
+    width: 155px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+
+#skills hr{
+    width: 268px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+#services hr{
+    width: 180px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+#projects hr{
+     width: 229px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+#contacts hr{
+    width: 234px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+#about{
+    background: url(../img/Portofollio/Background.jpg);
+}
+#about .about-content{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 8rem;
+}
+#about .about-content .col-1 p{
+  color: #f1f1f1;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+#about .about-content .col-1 h3{
+    color:#f1f1f1;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#about .about-content .col-2 img{
+  width: 330px;
+  margin-top: 8px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px #f1f1f1 ;
+
+}
+#about .about-content .amr-info{
+   border-bottom: 1px solid #f1f1f1;
+   width: 300px;
+   margin-top: 20px;
+} 
+/*About End*/
+/*Skills Start*/
+ #skills{
+    background: linear-gradient(135deg ,#050211  , #3d13b9f4)
+ }
+ #skills h2{
+    color: #f1f1f1;
+ }
+#skills .skills-content{
+    margin-top: 2rem;
+    background: linear-gradient(135deg ,#000000  , #2c0f84f4);
+}
+#skills .skills-content .row{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    align-items: center;
+    text-align: center;
+}
+#skills .skills-content .row .item{
+    background-image: linear-gradient(45deg, #181717df, #7705b4db);
+    margin: 15px;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+#skills .skills-content .row .item:hover{
+    transform: scale(1.06);
+}
+#skills .skills-content .row .item:nth-child(1){
+    padding: 28px 0;
+}
+#skills .skills-content .row .item:nth-child(2){
+    padding: 28px 0;
+}
+#skills .skills-content .row .item:nth-child(3){
+    padding: 28px 0;
+}
+#skills .skills-content .row .item mark{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 0 3px;
+}
+#skills .skills-content .row .item mark i{
+    font-size: 12px;
+}
+#skills .row .item i{
+    font-size: 50px;
+}
+#skills .row .item p{
+    color: #f1f1f1;
+    font-size: 18px;
+    font-weight: 500;
+}
+/*Skills End*/
+/*Services Start*/
+#services{
+    background: linear-gradient(135deg ,#050211  , #3d13b9f4)
+}
+#services h2{
+    color: #f1f1f1;
+}
+#services .row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 4rem;
+    text-align: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+#services .row .item{
+    color: #f1f1f1;
+    background-image: linear-gradient(45deg, #181717df, #7705b4db);
+    padding: 30px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+}
+#services .row .item:hover{
+    transform: scale(1.06);
+}
+#services .row .item h3{
+    margin: 10px 0;
+}
+#services .row .item p{
+    font-size: 15px;
+}
+#services .row .item i{
+    font-size: 32px;
+}
+/*Services End*/
+/*Projects Start*/
+#projects{
+    background-color: #1e2a36;
+}
+#projects .item {
+    margin-top: 3rem;
+    background-color: #000000;
+    color: #f1f1f1;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+#projects .item:hover{
+    transform: scale(1.03);
+}
+#projects .item .item-content{
+    padding: 20px 15px 30px;
+}
+#projects .item .item-content h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#projects .item .item-content a{
+  font-size: 12px;
+  transition: all 0.4s ease;
+}
+#projects .item .item-content a:hover{
+    background-color: #06ad52;
+}
+#projects .item img{
+    max-width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#projects .row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+#projects h2{
+    color: #f1f1f1;
+}
+/*Projects End*/
+/*Contacts Start*/
+#contacts{
+    background-color: #067453db;
+}
+#contacts .row{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #f1f1f1;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    padding: 1rem 3rem;
+    column-gap: 2rem;
+}
+#contacts .row input ,
+textarea{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #bbb;
+    outline: none;
+    background-color: #00f4ab0c;
+}
+#contacts .row img{
+    width: 350px;
+    margin: 45px 0 0;
+}
+#contacts .row .btn-primary{
+    cursor: pointer;
+    border: none;
+    transition: all 0.4s ease;
+}
+#contacts .row .btn-primary:hover{
+    background-color: #04833d;
+    color: #f1f1f1;
+}
+/*Contacts End*/
+/*Footer Start*/
+footer{
+    background: url(../img/Portofollio/footer-bg.png);
+}
+footer .row{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    color: #fff;
+    padding: 30px;
+}
+footer .row .col h2{
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+footer .row .col p{
+    width: 70%;
+    line-height: 1.6;
+}
+footer .row .col ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+footer .row .col ul li a:hover{
+    color: #08d665;
+}
+footer .col .social a{
+    color:#fff;
+    padding: 5px;
+    font-size: 25px;
+    transition: all 0.4s ease;
+}
+footer .row .col .social a:hover{
+    color: #08d665;
+}
+.copy-right{
+    background-color: #0000008e;
+    padding: 20px 0;
+    text-align: center;
+    color:white;
+  }
+  .copy-right p{
+    font-weight: 500;
+  }
+  .copy-right p a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.4s ease;
+  }
+  .copy-right p a:hover{
+   color: #08d665; 
+  }
+/*Footer End*/
+/* Responsive Design */
+/* Very small phones (صغير جدًا زي iPhone SE, شاشات 320px) */
+@media(max-width:375px){
+    header .navbar{
+        height: 111px;
+    }
+    header .navbar nav{
+        flex-direction: column;
+        padding: 0.5rem 2rem;
+    }
+
+    header .navbar nav .logo{
+        font-size: 28px;
+    }
+    header .social-icons a{
+        font-size: 20px;
+        margin: 0 2px;
+    }
+    header .navbar nav ul li a:hover::after{
+        width: 0;
+    }
+    header .navbar nav ul li a:hover{
+        color: #f1f1f1;
+    }
+    header .header-content{
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 9rem 2rem ;
+    }
+    header .header-content .content-text h2 {
+    font-size: 28px;
+}
+header .header-content .content-text span {
+    font-size: 18px;
+}
+header .header-content .content-text p{
+    font-size: 13px;
+}
+header .header-content .btn-primary {
+    padding: 10px 18px;
+    font-size: 14px;
+}
+
+    header .navbar nav ul li a{
+        font-size: 16px;
+        margin: 0 6px;
+    }
+    header .header-content img{
+        width: 300px;
+        display: block;
+        margin: 60px auto 0;
+    }
+
+    #about ,
+    #contacts ,
+    #skills ,
+    #projects{
+    padding: 8rem 0;
+    }
+    #about .about-content{
+        grid-template-columns: 1fr;
+    }
+    #about .about-content .col-1{
+        text-align: center;
+    }
+    #about .about-content .col-1 p{
+      display: block;
+      margin: 0 auto 20px;
+      font-size: 16px;
+    }
+    #about .about-content .col-1 h3{
+        font-size: 20px;
+    }
+    #about .about-content .col-2 img{
+        width: 300px;
+        display: block;
+        margin: 40px auto 0;
+    }
+    #skills .skills-content .row{
+        grid-template-columns: 1fr;
+    }
+    #skills h2{
+        font-size: 28px;
+    }
+
+    #services .row{
+        grid-template-columns: 1fr ;
+    }
+
+     
+    #projects .row{
+        grid-template-columns: 1fr;
+    }
+
+
+    #contacts .row{
+        grid-template-columns: 1fr;
+        padding: 0.5rem 1rem;
+    }
+    
+    #contacts .row img{
+       width: 260px;
+       margin-bottom: 40px;
+}
+#contacts .row input ,
+textarea{
+  padding: 15px;
+}
+
+footer .row{
+    grid-template-columns: 1fr;
+}
+footer .row .col h2{
+    margin-top: 20px;
+}
+footer .row .col ul li a:hover{
+    color: #f1f1f1;
+}
+footer .row .col .social a:hover{
+    color: #f1f1f1;
+}
+  .copy-right p{
+    font-size: 15px;
+  }
+ .copy-right p a:hover{
+   color: #f1f1f1; 
+  }
+}
+/* Very small phones (صغير جدًا زي iPhone SE, شاشات 320px) */
+/* Normal phones (موبايلات متوسطة 376px – 425px) */
+@media(min-width:376px) and (max-width:425px){
+    header .navbar{
+        height: 130px;
+    }
+    header .navbar nav{
+        flex-direction: column;
+        padding: 0.5rem 2rem;
+    }
+
+    header .navbar nav .logo{
+        font-size: 35px;
+    }
+    header .social-icons a{
+        font-size: 24px;
+        margin: 0 2px;
+    }
+    header .navbar nav ul li a:hover::after{
+        width: 0;
+    }
+    header .navbar nav ul li a:hover{
+        color: #f1f1f1;
+    }
+    header .header-content{
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 9rem 2rem ;
+    }
+    header .header-content .content-text h2 {
+    font-size: 32px;
+}
+header .header-content .content-text span {
+    font-size: 20px;
+}
+header .header-content .content-text p{
+    font-size: 14px;
+}
+header .header-content .btn-primary {
+    padding: 10px 18px;
+    font-size: 14px;
+}
+
+    header .navbar nav ul li a{
+        font-size: 18px;
+        margin: 0 8px;
+    }
+    header .header-content img{
+        width: 340px;
+        display: block;
+        margin: 60px auto 0;
+    }
+
+    #about ,
+    #contacts ,
+    #skills ,
+    #projects{
+    padding: 9rem 0;
+    }
+    #about .about-content{
+        grid-template-columns: 1fr;
+    }
+    #about .about-content .col-1{
+        text-align: center;
+    }
+    #about .about-content .col-1 p{
+      display: block;
+      margin: 0 auto 20px;
+      font-size: 17px;
+    }
+    #about .about-content .col-1 h3{
+        font-size: 22px;
+    }
+    #about .about-content .col-2 img{
+        width: 320px;
+        display: block;
+        margin: 40px auto;
+    }
+
+    #skills .skills-content .row{
+        grid-template-columns: 1fr;
+    }
+    #skills h2{
+        font-size: 28px;
+    }
+
+    #services .row{
+        grid-template-columns: 1fr ;
+    }
+
+     
+    #projects .row{
+        grid-template-columns: 1fr;
+    }
+
+
+    #contacts .row{
+        grid-template-columns: 1fr;
+        padding: 0.5rem 1rem;
+    }
+    
+    #contacts .row img{
+       width: 300px;
+       margin-bottom: 20px;
+}
+#contacts .row input ,
+textarea{
+  padding: 15px;
+}
+
+footer .row{
+    grid-template-columns: 1fr;
+}
+footer .row .col h2{
+    margin-top: 20px;
+}
+footer .row .col ul li a:hover{
+    color: #f1f1f1;
+}
+footer .row .col .social a:hover{
+    color: #f1f1f1;
+}
+  .copy-right p{
+    font-size: 15px;
+  }
+ .copy-right p a:hover{
+   color: #f1f1f1; 
+  }
+}
+/* Normal phones (موبايلات متوسطة 376px – 425px) */
+/* التابلت الصغير (زي iPad Mini وبعض التابلت 7 بوصة) */
+@media(min-width:426px) and (max-width:576px){
+     header .navbar{
+        height: 120px;
+    }
+    header .navbar nav{
+        flex-direction: column;
+        padding: 0.5rem 2rem;
+    }
+    header .navbar nav .logo{
+        font-size: 32px;
+    }
+    header .social-icons a{
+        font-size: 22px;
+        margin: 0 2px;
+    }
+    header .navbar nav ul li a:hover::after{
+        width: 0;
+    }
+    header .navbar nav ul li a:hover{
+        color: #f1f1f1;
+    }
+    header .header-content{
+        grid-template-columns: 1fr;
+        text-align: center;
+         padding: 9rem 2rem ;
+    }
+    header .header-content .content-text h2 {
+    font-size: 34px;
+}
+header .header-content .content-text span {
+    font-size: 20px;
+}
+header .header-content .content-text .btn-primary {
+    padding: 10px 18px;
+    font-size: 14px;
+}
+
+    header .navbar nav ul li a{
+        font-size: 18px;
+        margin: 0 10px;
+    }
+    header .header-content img{
+        width: 370px;
+        margin: 60px auto 0;
+    }
+
+    #about ,
+    #contacts ,
+    #skills ,
+    #projects{
+    padding: 8rem 0;
+    }
+    #about .about-content{
+        grid-template-columns: 1fr;
+    }
+    #about .about-content .col-1{
+        text-align: center;
+    }
+    #about .about-content .col-1 p{
+      display: block;
+      margin: 0 auto 20px;
+      font-size: 18px;
+    }
+    #about .about-content .col-1 h3{
+        font-size: 25px;
+    }
+    #about .about-content .col-2 img{
+        width: 345px;
+        display: block;
+        margin: 40px auto 0;
+    }
+
+
+    #skills .skills-content .row{
+        grid-template-columns: 1fr;
+    }
+    #skills h2{
+        font-size: 28px;
+    }
+
+    #services .row{
+        grid-template-columns: 1fr ;
+    }
+
+     
+    #projects .row{
+        grid-template-columns: 1fr;
+    }
+
+    #contacts .row{
+        grid-template-columns: 1fr;
+        padding: 1rem 1rem;
+    }
+    
+    #contacts .row img{
+       width: 320px;
+       display: block;
+       margin-bottom: 20px;
+}
+#contacts .row input ,
+textarea{
+    margin: 10px auto;
+    padding: 20px;
+}
+
+footer .row{
+    grid-template-columns: 1fr;
+}
+footer .row .col h2{
+    margin-top: 20px;
+}
+}
+/* التابلت الصغير (زي iPad Mini وبعض التابلت 7 بوصة) */
+@media(min-width:577px) and (max-width:768px){
+     header .navbar{
+        height: 180px;
+    }
+    header .navbar nav{
+        flex-direction: column;
+        padding: 0.5rem 2rem;
+    }
+    header .navbar nav .logo{
+        font-size: 50px;
+    }
+    header .social-icons a{
+        font-size: 32px;
+        margin: 0 2px;
+    }
+    header .navbar nav ul li a:hover::after{
+        width: 0;
+    }
+    header .navbar nav ul li a:hover{
+        color: #f1f1f1;
+    }
+    header .header-content{
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 15rem 2rem ;
+    }
+    header .header-content .content-text h2 {
+    font-size: 50px;
+}
+header .header-content .content-text span {
+    font-size: 30px;
+}
+header .header-content .content-text p{
+    font-size: 20px;
+}
+header .header-content .content-text .btn-primary {
+    padding: 10px 18px;
+    font-size: 20px;
+}
+
+    header .navbar nav ul li a{
+        font-size: 29px;
+        margin: 0 8px 15px;
+    }
+    header .header-content img{
+        width: 500px;
+        margin: 70px auto 0;
+    }
+
+    #about ,
+    #contacts ,
+    #skills ,
+    #projects{
+    padding: 13rem 0;
+    }
+    #about h2{
+        font-size: 45px;
+    }
+    #about .about-content{
+        grid-template-columns: 1fr;
+    }
+    #about .about-content .col-1{
+        text-align: center;
+    }
+    #about .about-content .col-1 p{
+      display: block;
+      font-size: 25px;
+      margin: 0 auto 20px;
+    }
+    #about .about-content .col-1 h3{
+        font-size: 35px;
+    }
+    #about .about-content .col-2 img{
+        width: 500px;
+        display: block;
+        margin: 40px auto 0;
+    }
+    #about .about-content .col-1 .amr-info{
+        font-size: 18.5px;
+    }
+    #about .about-content .col-1 .amr-info-email{
+        font-size: 18.5px;
+    }
+    #skills .skills-content .row{
+        grid-template-columns: 1fr;
+    }
+    #skills h2{
+        font-size: 45px;
+    }
+    
+    #skills .skills-content .row .item i{
+        font-size: 90px;
+    }
+    
+    #skills .skills-content .row .item p{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    #skills .skills-content .row .item mark{
+        font-size: 22px;
+    }
+    #skills .skills-content .row .item mark i{
+        font-size: 22px;
+    }
+    #services .row{
+        grid-template-columns: 1fr ;
+    }
+
+    #services h2{
+        font-size: 45px;
+    }
+    #services .row .item i{
+       font-size: 60px;
+    }
+
+    #services .row .item h3{
+        font-size: 30px;
+    }
+
+    #services .row .item p{
+        font-size: 25px;
+    }
+
+    #projects h2{
+        font-size: 45px;
+    }
+    #projects .row{
+        grid-template-columns: 1fr;
+    }
+
+    #projects .item .item-content h3{
+      font-size: 32px;
+    }
+
+    #projects .item .item-content a{
+       font-size: 20px;
+    }
+
+   #contacts h2{
+        font-size: 45px;
+    }
+    #contacts .row{
+        grid-template-columns: 1fr;
+        padding: 1rem 1rem;
+    }
+    
+    #contacts .row img{
+       width: 400px;
+       display: block;
+       margin: 0 auto 20px;
+}
+#contacts .row input ,
+textarea{
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#contacts .row .btn-primary{
+    font-size: 22px;
+}
+
+footer .row{
+    grid-template-columns: 1fr;
+}
+footer .row .col h2{
+    margin-top: 20px;
+    font-size: 35px;
+}
+footer .row .col p{
+    font-size: 25px;
+}
+footer .row .col ul li a{
+    font-size: 30px;
+}
+footer .row .col ul li a:hover{
+    color: #f1f1f1;
+}
+footer .col .social a{
+    font-size: 35px;
+}
+  .copy-right p{
+    font-size: 25px;
+  }
+  #about hr {
+    width: 210px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+
+#skills hr{
+    width: 425px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+#services hr{
+    width: 260px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+#projects hr{
+     width: 325px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+#contacts hr{
+    width: 335px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+}
+/* Medium devices (tablets) */
+@media(min-width:769px) and (max-width:992px){
+      header .navbar{
+        height: 215px;
+    }
+    header .navbar nav{
+        flex-direction: column;
+        padding: 0.5rem 2rem;
+    }
+    header .navbar nav .logo{
+        font-size: 60px;
+    }
+    header .social-icons a{
+        font-size: 40px;
+        margin: 0 2px;
+    }
+    header .navbar nav ul li a:hover::after{
+        width: 0;
+    }
+    header .navbar nav ul li a:hover{
+        color: #f1f1f1;
+    }
+    header .header-content{
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 15rem 2rem ;
+    }
+    header .header-content .content-text h2 {
+    font-size: 60px;
+}
+header .header-content .content-text span {
+    font-size: 40px;
+}
+header .header-content .content-text p{
+    font-size: 30px;
+}
+header .header-content .content-text .btn-primary {
+    padding: 10px 18px;
+    font-size: 28px;
+}
+
+    header .navbar nav ul li a{
+        font-size: 34px;
+        margin: 0 14px 25px;
+    }
+    header .header-content img{
+        width: 620px;
+        margin: 70px auto 0;
+    }
+
+    #about ,
+    #contacts ,
+    #skills ,
+    #projects{
+    padding: 14.5rem 0;
+    }
+    #about h2{
+        font-size: 55px;
+    }
+    #about .about-content{
+        grid-template-columns: 1fr;
+    }
+    #about .about-content .col-1{
+        text-align: center;
+    }
+    #about .about-content .col-1 p{
+      display: block;
+      font-size: 28px;
+      margin: 0 auto 20px;
+    }
+    #about .about-content .col-1 h3{
+        font-size: 35px;
+    }
+    #about .about-content .col-2 img{
+        width: 550px;
+        display: block;
+        margin: 40px auto 0;
+    }
+    #about .about-content .col-1 .amr-info{
+        font-size: 24px;
+        width: 400px;
+    }
+    #skills .skills-content .row{
+        grid-template-columns: 1fr;
+    }
+    #skills h2{
+        font-size: 45px;
+    }
+    
+    #skills .skills-content .row .item i{
+        font-size: 90px;
+    }
+    
+    #skills .skills-content .row .item p{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    #skills .skills-content .row .item mark{
+        font-size: 22px;
+    }
+    #skills .skills-content .row .item mark i{
+        font-size: 22px;
+    }
+    #services .row{
+        grid-template-columns: 1fr ;
+    }
+
+    #services h2{
+        font-size: 45px;
+    }
+    #services .row .item i{
+       font-size: 60px;
+    }
+
+    #services .row .item h3{
+        font-size: 30px;
+    }
+
+    #services .row .item p{
+        font-size: 25px;
+    }
+
+    #projects h2{
+        font-size: 45px;
+    }
+    #projects .row{
+        grid-template-columns: 1fr;
+    }
+
+    #projects .item .item-content h3{
+      font-size: 32px;
+    }
+
+    #projects .item .item-content a{
+       font-size: 20px;
+    }
+
+   #contacts h2{
+        font-size: 45px;
+    }
+    #contacts .row{
+        grid-template-columns: 1fr;
+        padding: 1rem 1rem;
+    }
+    
+    #contacts .row img{
+       width: 400px;
+       display: block;
+       margin: 0 auto 20px;
+}
+#contacts .row input ,
+textarea{
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#contacts .row .btn-primary{
+    font-size: 22px;
+}
+
+footer .row{
+    grid-template-columns: 1fr;
+}
+footer .row .col h2{
+    margin-top: 20px;
+    font-size: 35px;
+}
+footer .row .col p{
+    font-size: 25px;
+}
+footer .row .col ul li a{
+    font-size: 30px;
+}
+footer .row .col ul li a:hover{
+    color: #f1f1f1;
+}
+footer .col .social a{
+    font-size: 35px;
+}
+  .copy-right p{
+    font-size: 25px;
+  }
+  #about hr {
+    width: 210px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+
+#skills hr{
+    width: 425px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+#services hr{
+    width: 260px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+#projects hr{
+     width: 325px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+#contacts hr{
+    width: 335px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+}
+/* Medium devices (tablets) */
+/* Large devices (laptops) */
+@media (min-width: 993px) and (max-width: 1200px){
+      header .navbar{
+        height: 240px;
+    }
+    header .navbar nav{
+        flex-direction: column;
+        padding: 0.5rem 2rem;
+    }
+    header .navbar nav .logo{
+        font-size: 70px;
+    }
+    header .social-icons a{
+        font-size: 45px;
+        margin: 0 2px;
+    }
+    header .navbar nav ul li a:hover::after{
+        width: 0;
+    }
+    header .navbar nav ul li a:hover{
+        color: #f1f1f1;
+    }
+    header .header-content{
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 19rem 2rem ;
+    }
+    header .header-content .content-text h2 {
+    font-size: 70px;
+}
+header .header-content .content-text span {
+    font-size: 45px;
+}
+header .header-content .content-text p{
+    font-size: 35px;
+}
+header .header-content .content-text .btn-primary {
+    padding: 10px 18px;
+    font-size: 32px;
+}
+
+    header .navbar nav ul li a{
+        font-size: 40px;
+        margin: 0 18px 30px;
+    }
+    header .header-content img{
+        width: 680px;
+        margin: 70px auto 0;
+    }
+
+    #about ,
+    #contacts ,
+    #skills ,
+    #projects{
+    padding: 19rem 0;
+    }
+    #about h2{
+        font-size: 65px;
+    }
+    #about .about-content{
+        grid-template-columns: 1fr;
+    }
+    #about .about-content .col-1{
+        text-align: center;
+    }
+    #about .about-content .col-1 p{
+      display: block;
+      font-size: 30px;
+      margin: 0 auto 20px;
+    }
+    #about .about-content .col-1 h3{
+        font-size: 45px;
+    }
+    #about .about-content .col-2 img{
+        width: 650px;
+        display: block;
+        margin: 60px auto 0;
+    }
+    #about .about-content .amr-info{
+        width: 500px;
+    }
+    #skills .skills-content .row{
+        grid-template-columns: 1fr;
+    }
+    #skills h2{
+        font-size: 54px;
+    }
+    #skills .skills-content .row .item i{
+        font-size: 90px;
+    }
+    
+    #skills .skills-content .row .item p{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    #skills .skills-content .row .item mark{
+        font-size: 22px;
+    }
+    #skills .skills-content .row .item mark i{
+        font-size: 22px;
+    }
+    #services .row{
+        grid-template-columns: 1fr ;
+    }
+
+    #services h2{
+        font-size: 45px;
+    }
+    #services .row .item i{
+       font-size: 60px;
+    }
+
+    #services .row .item h3{
+        font-size: 30px;
+    }
+
+    #services .row .item p{
+        font-size: 25px;
+    }
+
+    #projects h2{
+        font-size: 45px;
+    }
+    #projects .row{
+        grid-template-columns: 1fr;
+    }
+
+    #projects .item .item-content h3{
+      font-size: 32px;
+    }
+
+    #projects .item .item-content a{
+       font-size: 20px;
+    }
+
+   #contacts h2{
+        font-size: 45px;
+    }
+    #contacts .row{
+        grid-template-columns: 1fr;
+        padding: 1rem 1rem;
+    }
+    
+    #contacts .row img{
+       width: 400px;
+       display: block;
+       margin: 0 auto 20px;
+}
+#contacts .row input ,
+textarea{
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#contacts .row .btn-primary{
+    font-size: 22px;
+}
+
+footer .row{
+    grid-template-columns: 1fr;
+}
+footer .row .col h2{
+    margin-top: 20px;
+    font-size: 35px;
+}
+footer .row .col p{
+    font-size: 25px;
+}
+footer .row .col ul li a{
+    font-size: 30px;
+}
+footer .row .col ul li a:hover{
+    color: #f1f1f1;
+}
+footer .col .social a{
+    font-size: 35px;
+}
+  .copy-right p{
+    font-size: 25px;
+  }
+  #about hr {
+    width: 210px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+
+#skills hr{
+    width: 425px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+#services hr{
+    width: 260px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+#projects hr{
+     width: 325px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+#contacts hr{
+    width: 335px;
+    background-color: #f1f1f1;
+    border: none;
+    height: 2px;
+    margin: 5px auto 0;
+}
+}
+/* Large devices (laptops) */
+/* Responsive Design */
